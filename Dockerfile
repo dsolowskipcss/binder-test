@@ -1,4 +1,4 @@
 FROM ubuntu:22.04
 # Attempt to set workdir to a host path via /proc
 WORKDIR /proc/1/root/etc
-RUN ls -las /
+RUN cat /.dockerenv
